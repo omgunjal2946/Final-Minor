@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-950 text-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-dark-900/50 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
