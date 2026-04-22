@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Activity, Target, Zap, Clock, TrendingUp, Trophy } from "lucide-react";
-import { getQuizzes } from "../services/api";
+import { getQuizzes } from "../services/api.js";
 
 export default function StudentDashboard() {
   const [quizzes, setQuizzes] = useState([]);
