@@ -1,3 +1,4 @@
+import { getQuizzes } from "../services/api";
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Activity, Target, Zap, Clock, TrendingUp, Trophy } from 'lucide-react';
